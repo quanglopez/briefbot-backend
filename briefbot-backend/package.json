@@ -1,0 +1,37 @@
+{
+  "name": "briefbot-backend",
+  "version": "0.1.0",
+  "description": "BriefBot - AI-powered creative brief generator backend",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "axios": "^1.7.7",
+    "bullmq": "^5.22.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "ioredis": "^5.4.1",
+    "openai": "^4.67.0",
+    "pino": "^9.4.0",
+    "pino-pretty": "^11.3.0",
+    "playwright": "^1.49.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.9.0",
+    "eslint": "^9.14.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
